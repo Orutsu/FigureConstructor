@@ -1,0 +1,1165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../Реферати/icon2DFigure.png</normaloff>../../../Реферати/icon2DFigure.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="pushReadFile">
+    <property name="geometry">
+     <rect>
+      <x>141</x>
+      <y>254</y>
+      <width>131</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Намалювати з файлу</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>200</y>
+      <width>1021</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>0</y>
+      <width>2</width>
+      <height>601</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_3">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>400</y>
+      <width>1021</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_4">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>0</y>
+      <width>2</width>
+      <height>625</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_5">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>0</y>
+      <width>2</width>
+      <height>625</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_6">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>0</y>
+      <width>2</width>
+      <height>625</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_7">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>0</y>
+      <width>2</width>
+      <height>625</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="figureChoice">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>30</y>
+      <width>131</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <item>
+     <property name="text">
+      <string>Квадрат</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Прямокутник</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Коло</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Трикутник</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Еліпс</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="pushDrawFromUI">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>153</y>
+      <width>261</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Намалювати</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushCancelDraw">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>229</y>
+      <width>131</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Стерти фігуру</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="l1">
+    <property name="geometry">
+     <rect>
+      <x>23</x>
+      <y>59</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="l2">
+    <property name="geometry">
+     <rect>
+      <x>23</x>
+      <y>89</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="l3">
+    <property name="geometry">
+     <rect>
+      <x>23</x>
+      <y>119</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>8</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinCurrCell">
+    <property name="geometry">
+     <rect>
+      <x>81</x>
+      <y>6</y>
+      <width>61</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+    <property name="maximum">
+     <number>15</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spin1">
+    <property name="geometry">
+     <rect>
+      <x>93</x>
+      <y>56</y>
+      <width>61</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>10</number>
+    </property>
+    <property name="maximum">
+     <number>190</number>
+    </property>
+    <property name="value">
+     <number>100</number>
+    </property>
+    <property name="displayIntegerBase">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spin2">
+    <property name="geometry">
+     <rect>
+      <x>93</x>
+      <y>86</y>
+      <width>61</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>10</number>
+    </property>
+    <property name="maximum">
+     <number>190</number>
+    </property>
+    <property name="value">
+     <number>55</number>
+    </property>
+    <property name="displayIntegerBase">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spin3">
+    <property name="geometry">
+     <rect>
+      <x>93</x>
+      <y>116</y>
+      <width>61</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>10</number>
+    </property>
+    <property name="maximum">
+     <number>190</number>
+    </property>
+    <property name="value">
+     <number>145</number>
+    </property>
+    <property name="displayIntegerBase">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinY1">
+    <property name="geometry">
+     <rect>
+      <x>183</x>
+      <y>56</y>
+      <width>61</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>10</number>
+    </property>
+    <property name="maximum">
+     <number>190</number>
+    </property>
+    <property name="value">
+     <number>50</number>
+    </property>
+    <property name="displayIntegerBase">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinY2">
+    <property name="geometry">
+     <rect>
+      <x>183</x>
+      <y>86</y>
+      <width>61</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>10</number>
+    </property>
+    <property name="maximum">
+     <number>190</number>
+    </property>
+    <property name="value">
+     <number>150</number>
+    </property>
+    <property name="displayIntegerBase">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="spinY3">
+    <property name="geometry">
+     <rect>
+      <x>183</x>
+      <y>116</y>
+      <width>61</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>10</number>
+    </property>
+    <property name="maximum">
+     <number>190</number>
+    </property>
+    <property name="value">
+     <number>150</number>
+    </property>
+    <property name="displayIntegerBase">
+     <number>10</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ly1">
+    <property name="geometry">
+     <rect>
+      <x>173</x>
+      <y>59</y>
+      <width>10</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>y</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ly2">
+    <property name="geometry">
+     <rect>
+      <x>173</x>
+      <y>89</y>
+      <width>10</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>y</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ly3">
+    <property name="geometry">
+     <rect>
+      <x>173</x>
+      <y>119</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>y</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cell2">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>0</y>
+      <width>200</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>1</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cell5">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>0</y>
+      <width>200</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>1</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cell4">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>0</y>
+      <width>200</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>1</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cell8">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>200</y>
+      <width>200</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>1</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cell13">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>400</y>
+      <width>200</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>1</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cell6">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>200</y>
+      <width>201</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>1</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cell9">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>200</y>
+      <width>200</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>1</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cell12">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>400</y>
+      <width>200</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>1</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cell11">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>400</y>
+      <width>200</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>1</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cell3">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>0</y>
+      <width>200</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>1</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cell7">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>200</y>
+      <width>200</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>1</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cell14">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>400</y>
+      <width>200</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>1</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cell15">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>400</y>
+      <width>200</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>1</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cell10">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>200</y>
+      <width>200</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>1</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cell1">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>0</y>
+      <width>200</width>
+      <height>200</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>1</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>284</x>
+      <y>-3</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Клітинка № 1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>484</x>
+      <y>-3</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Клітинка № 2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>684</x>
+      <y>-3</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Клітинка № 3</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>884</x>
+      <y>-3</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Клітинка № 4</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>1084</x>
+      <y>-3</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Клітинка №5</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>284</x>
+      <y>197</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Клітинка № 6</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>1084</x>
+      <y>197</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Клітинка №10</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>484</x>
+      <y>197</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Клітинка № 7</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>884</x>
+      <y>197</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Клітинка № 9</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>684</x>
+      <y>197</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Клітинка № 8</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>284</x>
+      <y>397</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Клітинка № 11</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>1084</x>
+      <y>397</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Клітинка №15</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>484</x>
+      <y>397</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Клітинка № 12</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>884</x>
+      <y>397</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Клітинка № 14</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>684</x>
+      <y>397</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Клітинка № 13</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>8</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Клітинка  №</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>145</x>
+      <y>8</y>
+      <width>40</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Колір:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="figureColor">
+    <property name="geometry">
+     <rect>
+      <x>142</x>
+      <y>30</y>
+      <width>128</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>3</number>
+    </property>
+    <item>
+     <property name="text">
+      <string>Червоний</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Помаранчевий</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Жовтий</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Зелений</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Синій</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Фіолетовий</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Чорний</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="px1">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>60</y>
+      <width>47</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>px</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="px2">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>85</y>
+      <width>20</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>px</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushCancelAll">
+    <property name="geometry">
+     <rect>
+      <x>141</x>
+      <y>229</y>
+      <width>131</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Стерти всі фігури</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushSave">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>254</y>
+      <width>131</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Зберегти фігури у файл</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushOneColor">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>178</y>
+      <width>261</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Встановити один колір всім фігурам</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushSingleColor">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>203</y>
+      <width>261</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Встановити окремі кольори однотипним фігурам</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>spinCurrCell</tabstop>
+  <tabstop>figureChoice</tabstop>
+  <tabstop>pushDrawFromUI</tabstop>
+  <tabstop>pushCancelDraw</tabstop>
+  <tabstop>pushReadFile</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
